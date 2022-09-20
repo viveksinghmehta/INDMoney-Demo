@@ -83,7 +83,7 @@ final class UserListCell: UITableViewCell {
             designationLabel.text = designation
         }
         
-        profileImageView.setImage(url: user.profileURL, placeholderImage: "")
+        profileImageView.setImage(url: user.profileURL, placeholderImage: "placeholder")
     }
     
 }

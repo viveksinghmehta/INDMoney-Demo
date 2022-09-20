@@ -95,11 +95,12 @@ final class UserDetailViewController: UIViewController {
 extension UserDetailViewController: PresenterToViewUserDetailProtocol {
     
     func showUserDetails(name: String, profileURL: String, designation: String, description: String) {
+        self.title = name
+        
         profileImageView.setImage(url:profileURL, placeholderImage: "")
         nameLabel.text = name
         descriptionLabel.text = description
         designationLabel.text = designation
-        
     }
     
     
